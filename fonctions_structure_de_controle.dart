@@ -4,7 +4,8 @@ Future<void> main() async{
   // Les conditions dans les structures de contrôle doivent être de type booleéen 
   // Il n'y a pas d'évaluation à true pour les objets non nuls 
   var isActive = true;
-  User user = new User();
+  User? user = new User();
+  user = null;
   if (isActive){ // fonctionnera mais if (user) ne fonctionnera pas
 
   }
@@ -21,6 +22,8 @@ Future<void> main() async{
   User ser = new User()
   ..name = "Ulrich"
   ;
+  
+  ser.name = "Rick";
 
 }
 
