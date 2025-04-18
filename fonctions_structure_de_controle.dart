@@ -17,10 +17,17 @@ Future<void> main() async{
   for (var i = 0; i < count; i++) {
     print("count : $i");
   }
+
+  User ser = new User()
+  ..name = "Ulrich"
+  ;
+
 }
 
 
-class User{}
+class User{
+  late String name;
+}
 
 Future<String> greeting(String name){
   return Future(() => "Hello, $name");
